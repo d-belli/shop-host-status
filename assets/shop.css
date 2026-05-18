@@ -1,96 +1,168 @@
 /* .upptime/custom.css */
-/* Personalização para Shop Host Brasil - Preto e Verde Neon */
+/* Tema inspirado na identidade visual da Shop Host Brasil */
 
 :root {
-  --body-background-color: #000000;
-  --body-text-color: #ffffff;
-  --card-background-color: #111111;
-  --nav-background-color: #000000;
-  --nav-border-bottom-color: #00ff88;
-  --nav-current-border-bottom-color: #00ff88;
-  --card-border-color: #00ff88;
-  --down-border-left-color: #ff0000;
-  --down-background-color: rgba(255, 0, 0, 0.15);
-  --degraded-border-left-color: #ffcc00;
-  --up-border-left-color: #00ff88;
-  --tag-color: #000000;
-  --tag-up-background-color: #00ff88;
-  --tag-down-background-color: #ff0000;
-  --tag-degraded-background-color: #ffcc00;
-  --change-background-color: #ffcc00;
-  --error-button-border-color: #00ff88;
-  --error-button-background-color: #00ff88;
-  --error-button-color: #000000;
-  --submit-button-border-color: #00ff88;
-  --submit-button-background-color: #00ff88;
-  --submit-button-color: #000000;
+  --body-background-color: #0b1120;
+  --body-text-color: #f1f5f9;
+
+  --card-background-color: #111827;
+
+  --nav-background-color: #0b1120;
+  --nav-border-bottom-color: #38bdf8;
+  --nav-current-border-bottom-color: #38bdf8;
+
+  --card-border-color: rgba(56, 189, 248, 0.25);
+
+  --down-border-left-color: #ef4444;
+  --down-background-color: rgba(239, 68, 68, 0.12);
+
+  --degraded-border-left-color: #f59e0b;
+
+  --up-border-left-color: #38bdf8;
+
+  --tag-color: #ffffff;
+
+  --tag-up-background-color: #38bdf8;
+  --tag-down-background-color: #ef4444;
+  --tag-degraded-background-color: #f59e0b;
+
+  --change-background-color: #f59e0b;
+
+  --error-button-border-color: #38bdf8;
+  --error-button-background-color: #38bdf8;
+  --error-button-color: #0b1120;
+
+  --submit-button-border-color: #38bdf8;
+  --submit-button-background-color: #38bdf8;
+  --submit-button-color: #0b1120;
+
   --graph-opacity: 1;
-  --graph-filter: none;
+  --graph-filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.25));
 }
 
-/* Estilos adicionais para melhorar a aparência */
+/* Background geral */
+body {
+  background: linear-gradient(
+    180deg,
+    #020617 0%,
+    #0b1120 100%
+  ) !important;
+}
 
 /* Links */
 a {
-  color: #00ff88 !important;
-  transition: color 0.3s ease !important;
+  color: #38bdf8 !important;
+  transition: all 0.25s ease !important;
 }
 
 a:hover {
-  color: #00cc66 !important;
+  color: #7dd3fc !important;
   text-decoration: none !important;
 }
 
+/* Navbar */
+nav {
+  backdrop-filter: blur(12px) !important;
+  background: rgba(11, 17, 32, 0.9) !important;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.25) !important;
+}
+
 /* Botões */
-button, .button {
-  transition: all 0.3s ease !important;
+button,
+.button {
+  border-radius: 12px !important;
+  transition: all 0.25s ease !important;
+  font-weight: 600 !important;
 }
 
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   transform: translateY(-2px) !important;
-  filter: brightness(0.9) !important;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.25) !important;
 }
 
-/* Cards com hover effect */
+/* Cards */
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  background: rgba(17, 24, 39, 0.9) !important;
+  border: 1px solid rgba(56, 189, 248, 0.15) !important;
+  border-radius: 18px !important;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease !important;
 }
 
 .card:hover {
-  transform: translateY(-5px) !important;
-  box-shadow: 0 10px 25px rgba(0, 255, 136, 0.2) !important;
+  transform: translateY(-4px) !important;
+
+  border-color: rgba(56, 189, 248, 0.35) !important;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.45),
+    0 0 25px rgba(56, 189, 248, 0.08) !important;
 }
 
-/* Status text com glow */
-.status-operational, .up-border-left-color {
-  text-shadow: 0 0 10px rgba(0, 255, 136, 0.3) !important;
+/* Texto operacional */
+.status-operational {
+  color: #38bdf8 !important;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.35) !important;
 }
 
 /* Barras de progresso */
 .progress-bar {
-  background-color: #00ff88 !important;
+  background: linear-gradient(
+    90deg,
+    #0ea5e9,
+    #38bdf8
+  ) !important;
 }
 
 /* Gráficos */
 .graph-line {
-  stroke: #00ff88 !important;
+  stroke: #38bdf8 !important;
   stroke-width: 2px !important;
 }
 
 .graph-area {
-  fill: rgba(0, 255, 136, 0.1) !important;
+  fill: rgba(56, 189, 248, 0.12) !important;
 }
 
-/* Rodapé */
+/* Inputs */
+input,
+textarea,
+select {
+  background: #0f172a !important;
+  border: 1px solid rgba(56, 189, 248, 0.2) !important;
+  color: #f1f5f9 !important;
+  border-radius: 12px !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15) !important;
+}
+
+/* Footer */
 footer {
-  border-top: 2px solid #00ff88 !important;
+  border-top: 1px solid rgba(56, 189, 248, 0.2) !important;
   margin-top: 50px !important;
+  padding-top: 20px !important;
 }
 
 footer a {
-  color: #00ff88 !important;
+  color: #38bdf8 !important;
 }
 
 footer a:hover {
-  color: #00cc66 !important;
+  color: #7dd3fc !important;
+}
+
+/* Efeito glow suave */
+h1,
+h2,
+h3 {
+  text-shadow: 0 0 18px rgba(56, 189, 248, 0.08);
 }
