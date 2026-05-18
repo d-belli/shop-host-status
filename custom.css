@@ -1,0 +1,298 @@
+/* .upptime/custom.css */
+/* Personalização para Shop Host Brasil - Preto e Verde Neon */
+
+:root {
+  /* Cores principais da marca */
+  --primary: #00ff88 !important;
+  --primary-dark: #00cc66 !important;
+  --secondary: #000000 !important;
+  --background: #000000 !important;
+  --background-light: #111111 !important;
+  --foreground: #ffffff !important;
+  --foreground-muted: #888888 !important;
+  
+  /* Cores de status */
+  --success: #00ff88 !important;
+  --warning: #ffcc00 !important;
+  --error: #ff0000 !important;
+  --info: #0088ff !important;
+  
+  /* Cores dos cards */
+  --card-bg: #111111 !important;
+  --card-border: #00ff88 !important;
+  
+  /* Cores dos gráficos */
+  --graph-bg: #000000 !important;
+  --graph-grid: #333333 !important;
+  --graph-line: #00ff88 !important;
+}
+
+/* ============================================
+   HEADER E NAVEGAÇÃO
+   ============================================ */
+
+.navbar {
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%) !important;
+  border-bottom: 2px solid #00ff88 !important;
+  box-shadow: 0 2px 10px rgba(0, 255, 136, 0.1) !important;
+}
+
+.navbar-brand {
+  color: #00ff88 !important;
+  font-weight: bold !important;
+}
+
+.navbar a {
+  color: #ffffff !important;
+  transition: color 0.3s ease !important;
+}
+
+.navbar a:hover {
+  color: #00ff88 !important;
+  text-decoration: none !important;
+}
+
+/* ============================================
+   BOTÕES
+   ============================================ */
+
+.btn-primary {
+  background: #00ff88 !important;
+  border-color: #00ff88 !important;
+  color: #000000 !important;
+  font-weight: bold !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+  background: #00cc66 !important;
+  border-color: #00cc66 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3) !important;
+}
+
+.btn-outline-primary {
+  border-color: #00ff88 !important;
+  color: #00ff88 !important;
+}
+
+.btn-outline-primary:hover {
+  background: #00ff88 !important;
+  color: #000000 !important;
+}
+
+/* ============================================
+   CARDS E SERVIÇOS
+   ============================================ */
+
+.card {
+  background: #111111 !important;
+  border: 1px solid #00ff88 !important;
+  border-radius: 12px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 255, 136, 0.2) !important;
+}
+
+.card-title {
+  color: #00ff88 !important;
+}
+
+/* ============================================
+   STATUS INDICATORS
+   ============================================ */
+
+.status-operational {
+  color: #00ff88 !important;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5) !important;
+  font-weight: bold !important;
+}
+
+.status-degraded {
+  color: #ffcc00 !important;
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.5) !important;
+}
+
+.status-down {
+  color: #ff0000 !important;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.5) !important;
+}
+
+.badge-operational {
+  background: #00ff88 !important;
+  color: #000000 !important;
+}
+
+.badge-warning {
+  background: #ffcc00 !important;
+  color: #000000 !important;
+}
+
+.badge-down {
+  background: #ff0000 !important;
+  color: #ffffff !important;
+}
+
+/* ============================================
+   GRÁFICOS
+   ============================================ */
+
+.graph-container {
+  background: #000000 !important;
+}
+
+.graph {
+  background: #000000 !important;
+}
+
+.graph-line {
+  stroke: #00ff88 !important;
+  stroke-width: 3px !important;
+}
+
+.graph-area {
+  fill: rgba(0, 255, 136, 0.1) !important;
+}
+
+.graph-grid line {
+  stroke: #333333 !important;
+}
+
+.graph-axis line,
+.graph-axis path {
+  stroke: #00ff88 !important;
+}
+
+.graph-axis text {
+  fill: #ffffff !important;
+}
+
+/* ============================================
+   TABELAS E HISTÓRICO
+   ============================================ */
+
+.table {
+  background: #111111 !important;
+  border-color: #00ff88 !important;
+}
+
+.table th {
+  background: #00ff88 !important;
+  color: #000000 !important;
+  border-color: #00ff88 !important;
+}
+
+.table td {
+  color: #ffffff !important;
+  border-color: #333333 !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background: #0a0a0a !important;
+}
+
+/* ============================================
+   FOOTER / RODAPÉ
+   ============================================ */
+
+footer {
+  background: #000000 !important;
+  border-top: 2px solid #00ff88 !important;
+  margin-top: 50px !important;
+  padding: 30px 0 !important;
+}
+
+footer p, 
+footer .text-muted {
+  color: #ffffff !important;
+}
+
+footer a {
+  color: #00ff88 !important;
+}
+
+footer a:hover {
+  color: #00cc66 !important;
+}
+
+/* ============================================
+   LINKS GERAIS
+   ============================================ */
+
+a {
+  color: #00ff88 !important;
+  transition: color 0.3s ease !important;
+}
+
+a:hover {
+  color: #00cc66 !important;
+  text-decoration: none !important;
+}
+
+/* ============================================
+   ALERTAS E NOTIFICAÇÕES
+   ============================================ */
+
+.alert-success {
+  background: rgba(0, 255, 136, 0.1) !important;
+  border-color: #00ff88 !important;
+  color: #00ff88 !important;
+}
+
+.alert-warning {
+  background: rgba(255, 204, 0, 0.1) !important;
+  border-color: #ffcc00 !important;
+  color: #ffcc00 !important;
+}
+
+.alert-danger {
+  background: rgba(255, 0, 0, 0.1) !important;
+  border-color: #ff0000 !important;
+  color: #ff0000 !important;
+}
+
+/* ============================================
+   PROGRESS BARS
+   ============================================ */
+
+.progress {
+  background: #333333 !important;
+}
+
+.progress-bar {
+  background: #00ff88 !important;
+}
+
+/* ============================================
+   PÁGINA DE INCIDENTES
+   ============================================ */
+
+.timeline-item {
+  border-left-color: #00ff88 !important;
+}
+
+.timeline-badge {
+  background: #00ff88 !important;
+  color: #000000 !important;
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px !important;
+  }
+  
+  .card {
+    margin-bottom: 15px !important;
+  }
+  
+  .btn-primary {
+    padding: 8px 16px !important;
+  }
+}
