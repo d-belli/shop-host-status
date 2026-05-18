@@ -22,10 +22,6 @@ status-website:
     Aqui você acompanha em **tempo real** a disponibilidade dos nossos serviços:
     ✅ Site Principal
     ✅ Painel de Clientes
-    ✅ Blog
-    ✅ Suporte
-    ✅ API
-    ✅ FTP
     
     Nosso compromisso é garantir a melhor experiência para o seu negócio. 
     Em caso de qualquer indisponibilidade, esta página será atualizada automaticamente.
@@ -57,12 +53,29 @@ i18n:
   partialOutage: 🟠 Interrupção Parcial
   majorOutage: 🔴 Interrupção Grave
   underMaintenance: 🔧 Em Manutenção Programada
+  
+  # 🔥 TRADUÇÕES DE INCIDENTES (adicionadas)
   resolved: ✅ Resolvido
   investigating: 🔍 Investigando
   identified: 🎯 Identificado
   monitoring: 📊 Monitorando
   update: 📢 Atualização
   postmortem: 📝 Análise Pós-incidente
+  
+  # Textos específicos da página de incidente
+  incidentReport: "$NUMBERº Relatório de Incidente →"
+  activeIncidentSummary: "Aberto em $DATE, contém $POSTS posts"
+  incidentTitle: "Detalhes do $NUMBERº Incidente"
+  incidentDetails: "Detalhes do Incidente"
+  incidentFixed: "✅ Resolvido"
+  incidentOngoing: "🟡 Em andamento"
+  incidentOpenedAt: "Aberto em"
+  incidentClosedAt: "Fechado em"
+  incidentSubscribe: "📧 Receber atualizações"
+  incidentViewOnGitHub: "Ver no GitHub"
+  incidentCommentSummary: "$AUTHOR comentou em $DATE"
+  incidentBack: "← Voltar para lista de incidentes"
+  pastIncidentsResolved: "Resolvido em $MINUTES, contém $POSTS posts"
   
   # Textos do rodapé
   footer: "© 2026 Shop Host Brasil - Todos os direitos reservados | Status Page alimentada com 💚 pelo Upptime"
@@ -82,16 +95,37 @@ i18n:
   
   # Textos da página de histórico
   history:
-    title: "Histórico de Uptime - Shop Host Brasil"
+    title: "📅 Histórico de Uptime - Shop Host Brasil"
     uptime: "Uptime"
     responseTime: "Tempo de Resposta"
     noData: "Sem dados disponíveis"
-    
+    show: "Exibir"
+    entries: "entradas"
+    noIncidents: "✅ Nenhum incidente reportado neste período"
+  
+  # Textos de gráficos
+  graphs:
+    title: "📊 Gráficos de Uptime"
+    uptime: "Uptime (%)"
+    responseTime: "Tempo de Resposta (ms)"
+    noData: "Sem dados disponíveis para o período selecionado"
+  
+  # Seletor de período
+  period:
+    daily: "Diário"
+    weekly: "Semanal"
+    monthly: "Mensal"
+    yearly: "Anual"
+    all: "Todo período"
+  
   # Textos de notificações
   subscribe: "📧 Receba notificações por email"
   email: "Seu email"
-  notify: "Notificar-me"
+  webhook: "Webhook URL"
   rss: "Feed RSS"
+  notify: "Notificar-me"
+  unsubscribe: "Cancelar inscrição"
+  manageSubscription: "Gerenciar inscrição"
 
 # Configurações de notificações (opcional)
 notifications:
