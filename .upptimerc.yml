@@ -2,10 +2,6 @@
 owner: d-belli # Your GitHub organization or username, where this repository lives
 repo: shop-host-status # The name of this repository
 
-links:
-    - rel: stylesheet
-      href: /shop.css
-
 sites:
   - name: Site Principal
     url: https://shophost.com.br
@@ -34,14 +30,15 @@ status-website:
   navbar:
     - title: Status
       href: /
-    - title: Histórico
-      href: /history
+    # - title: Histórico
+    #   href: /history
     - title: Site Oficial
       href: https://shophost.com.br
-    - title: Suporte
-      href: https://suporte.shophost.com.br
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Área de Clientes
+      href: https://clientes.shophost.com.br
+    # - title: GitHub
+    #   href: https://github.com/$OWNER/$REPO
+  themeUrl: https://uptime.shophost.com.br/shop.css
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
