@@ -3,14 +3,18 @@ owner: d-belli # Your GitHub organization or username, where this repository liv
 repo: shop-host-status # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: Shop Host Brasil - Site Principal
+    url: https://shophost.com.br
+  - name: Shop Host Brasil - Painel de Clientes
+    url: https://painel.shophost.com.br
+  - name: Shop Host Brasil - Blog
+    url: https://blog.shophost.com.br
+  - name: Shop Host Brasil - Suporte
+    url: https://suporte.shophost.com.br
+  - name: Shop Host Brasil - API
+    url: https://api.shophost.com.br
+  - name: Shop Host Brasil - FTP
+    url: https://ftp.shophost.com.br
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
@@ -18,12 +22,32 @@ status-website:
   cname: uptime.shophost.com.br
   # baseUrl: /your-repo-name
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Status Shop Host
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  name: Status Shop Host Brasil
+  introTitle: "**Shop Host Brasil** - Página Oficial de Status"
+  introMessage: |
+    Bem-vindo à página de status oficial da **Shop Host Brasil**.
+    
+    Aqui você acompanha em **tempo real** a disponibilidade dos nossos serviços:
+    ✅ Site Principal
+    ✅ Painel de Clientes
+    ✅ Blog
+    ✅ Suporte
+    ✅ API
+    ✅ FTP
+    
+    Nosso compromisso é garantir a melhor experiência para o seu negócio. 
+    Em caso de qualquer indisponibilidade, esta página será atualizada automaticamente.
+    
+    💚 **Shop Host Brasil - Hospedagem que seu negócio merece**
   navbar:
     - title: Status
       href: /
+    - title: Histórico
+      href: /history
+    - title: Site Oficial
+      href: https://shophost.com.br
+    - title: Suporte
+      href: https://suporte.shophost.com.br
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 
@@ -31,4 +55,68 @@ status-website:
 # See https://upptime.js.org/docs/configuration
 
 i18n:
-  footer: [Shop Host](https://shophost.com.br)
+  # Traduções principais em português
+  activeIncidents: Incidentes Ativos
+  allSystemsOperational: ✅ Todos os sistemas da Shop Host Brasil estão operacionais
+  incidentsReported: Incidentes Reportados
+  pastIncidents: Incidentes Anteriores
+  operational: 🟢 Operacional
+  degraded: 🟡 Desempenho Degradado
+  partialOutage: 🟠 Interrupção Parcial
+  majorOutage: 🔴 Interrupção Grave
+  underMaintenance: 🔧 Em Manutenção Programada
+  resolved: ✅ Resolvido
+  investigating: 🔍 Investigando
+  identified: 🎯 Identificado
+  monitoring: 📊 Monitorando
+  update: 📢 Atualização
+  postmortem: 📝 Análise Pós-incidente
+  
+  # Textos do rodapé
+  footer: "© 2026 Shop Host Brasil - Todos os direitos reservados | Status Page alimentada com 💚 pelo Upptime"
+  
+  # Textos de tempo em português
+  justNow: agora mesmo
+  minuteAgo: há 1 minuto
+  minutesAgo: há %{count} minutos
+  hourAgo: há 1 hora
+  hoursAgo: há %{count} horas
+  dayAgo: há 1 dia
+  daysAgo: há %{count} dias
+  monthAgo: há 1 mês
+  monthsAgo: há %{count} meses
+  yearAgo: há 1 ano
+  yearsAgo: há %{count} anos
+  
+  # Textos da página de histórico
+  history:
+    title: "Histórico de Uptime - Shop Host Brasil"
+    uptime: "Uptime"
+    responseTime: "Tempo de Resposta"
+    noData: "Sem dados disponíveis"
+    
+  # Textos de notificações
+  subscribe: "📧 Receba notificações por email"
+  email: "Seu email"
+  notify: "Notificar-me"
+  rss: "Feed RSS"
+
+# Configurações de notificações (opcional)
+notifications:
+  - type: email
+    method: 
+      - d-belli@shophost.com.br
+    message: "🚨 **Shop Host Brasil** - Alerta de Incidente: {{ incident.title }}"
+
+# Configurações de commit
+commitMessages:
+  readme: "docs: atualizar status da Shop Host Brasil [skip ci]"
+  site: "chore: atualizar status page [skip ci]"
+
+# Agendamento dos workflows
+workflowSchedule:
+  graphs: "0 0 * * *"  # Executa gráficos diariamente
+  responseTime: "0 0 * * *"  # Executa tempo de resposta diariamente
+  staticSite: "0 0 * * *"  # Gera site diariamente
+  summary: "0 0 * * *"  # Sumário diário
+  uptime: "*/5 * * * *"  # Verifica uptime a cada 5 minutos
