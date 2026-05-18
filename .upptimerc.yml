@@ -2,6 +2,10 @@
 owner: d-belli # Your GitHub organization or username, where this repository lives
 repo: shop-host-status # The name of this repository
 
+links:
+    - rel: stylesheet
+      href: /shop.css
+
 sites:
   - name: Site Principal
     url: https://shophost.com.br
