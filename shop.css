@@ -1,0 +1,96 @@
+/* .upptime/custom.css */
+/* Personalização para Shop Host Brasil - Preto e Verde Neon */
+
+:root {
+  --body-background-color: #000000;
+  --body-text-color: #ffffff;
+  --card-background-color: #111111;
+  --nav-background-color: #000000;
+  --nav-border-bottom-color: #00ff88;
+  --nav-current-border-bottom-color: #00ff88;
+  --card-border-color: #00ff88;
+  --down-border-left-color: #ff0000;
+  --down-background-color: rgba(255, 0, 0, 0.15);
+  --degraded-border-left-color: #ffcc00;
+  --up-border-left-color: #00ff88;
+  --tag-color: #000000;
+  --tag-up-background-color: #00ff88;
+  --tag-down-background-color: #ff0000;
+  --tag-degraded-background-color: #ffcc00;
+  --change-background-color: #ffcc00;
+  --error-button-border-color: #00ff88;
+  --error-button-background-color: #00ff88;
+  --error-button-color: #000000;
+  --submit-button-border-color: #00ff88;
+  --submit-button-background-color: #00ff88;
+  --submit-button-color: #000000;
+  --graph-opacity: 1;
+  --graph-filter: none;
+}
+
+/* Estilos adicionais para melhorar a aparência */
+
+/* Links */
+a {
+  color: #00ff88 !important;
+  transition: color 0.3s ease !important;
+}
+
+a:hover {
+  color: #00cc66 !important;
+  text-decoration: none !important;
+}
+
+/* Botões */
+button, .button {
+  transition: all 0.3s ease !important;
+}
+
+button:hover, .button:hover {
+  transform: translateY(-2px) !important;
+  filter: brightness(0.9) !important;
+}
+
+/* Cards com hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 255, 136, 0.2) !important;
+}
+
+/* Status text com glow */
+.status-operational, .up-border-left-color {
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.3) !important;
+}
+
+/* Barras de progresso */
+.progress-bar {
+  background-color: #00ff88 !important;
+}
+
+/* Gráficos */
+.graph-line {
+  stroke: #00ff88 !important;
+  stroke-width: 2px !important;
+}
+
+.graph-area {
+  fill: rgba(0, 255, 136, 0.1) !important;
+}
+
+/* Rodapé */
+footer {
+  border-top: 2px solid #00ff88 !important;
+  margin-top: 50px !important;
+}
+
+footer a {
+  color: #00ff88 !important;
+}
+
+footer a:hover {
+  color: #00cc66 !important;
+}
