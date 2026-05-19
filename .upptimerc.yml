@@ -4,9 +4,13 @@ repo: shop-host-status # The name of this repository
 
 sites:
   - name: Site Principal
-    url: https://shophost.com.br
+    check: "tcp-ping"
+    url: $IP_SITE
+    port: 80
   - name: Painel de Clientes
-    url: https://clientes.shophost.com.br
+    check: "tcp-ping"
+    url: $IP_SITE
+    port: 80
   - name: Node BR 01 - Servidor Dedicado
     check: "tcp-ping"
     url: 181.215.45.203
