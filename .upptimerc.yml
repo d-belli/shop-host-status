@@ -27,6 +27,7 @@ status-website:
   # baseUrl: /your-repo-name
 
   logoUrl: https://raw.githubusercontent.com/d-belli/shop-host-status/master/assets/logo.svg
+  faviconSvg: https://raw.githubusercontent.com/d-belli/shop-host-status/master/assets/logo.svg
 
   name: Shop Host Brasil Status
 
