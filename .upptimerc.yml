@@ -8,9 +8,7 @@ sites:
   - name: Painel de Clientes
     url: https://clientes.shophost.com.br
   - name: Servidor Dedicado 01 - BR
-    check: "tcp-ping"
-    url: $IP_DEDICADO
-    port: 4085  
+    url: $URL_DEDICADO
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
