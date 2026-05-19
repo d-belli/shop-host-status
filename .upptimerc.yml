@@ -3,12 +3,12 @@ owner: d-belli # Your GitHub organization or username, where this repository liv
 repo: shop-host-status # The name of this repository
 
 sites:
-  - name: 🌐 Site Principal
+  - name: 🌐 Site Oficial
     check: "tcp-ping"
     url: $IP_SITE
     port: 80
 
-  - name: 👤 Painel de Clientes
+  - name: 👤 Área do Cliente
     check: "tcp-ping"
     url: $IP_SITE
     port: 80
@@ -27,29 +27,31 @@ status-website:
   # baseUrl: /your-repo-name
 
   logoUrl: https://raw.githubusercontent.com/d-belli/shop-host-status/master/assets/logo.svg
+
   name: Shop Host Brasil Status
 
-  introTitle: "🚀 Monitoramento Oficial da Infraestrutura Shop Host Brasil"
+  introTitle: "🚀 Status em Tempo Real da Infraestrutura Shop Host Brasil"
 
   introMessage: |
-    Bem-vindo à página oficial de monitoramento da **Shop Host Brasil**.
+    Acompanhe em tempo real a disponibilidade e estabilidade dos serviços da **Shop Host Brasil**.
 
-    Aqui você acompanha em tempo real a disponibilidade,
-    estabilidade e performance da nossa infraestrutura.
+    Nossa infraestrutura é monitorada continuamente para garantir
+    máxima performance, segurança e estabilidade para todos os clientes.
 
-    ### Serviços monitorados:
-    ✅ Site Principal  
-    ✅ Área de Clientes  
-    ✅ Infraestrutura Dedicada  
-    ✅ Nodes e Serviços Internos  
+    ### Serviços monitorados
+    ✅ Site Oficial  
+    ✅ Área do Cliente  
+    ✅ Infraestrutura Cloud  
+    ✅ Nodes Dedicados  
+    ✅ Serviços Internos  
 
-    Nossa equipe monitora continuamente todos os serviços
-    para garantir máxima estabilidade, segurança e performance.
+    Todos os serviços passam por verificações automáticas
+    para assegurar alta disponibilidade e resposta rápida em caso de incidentes.
 
-    Em caso de incidentes, manutenções ou instabilidades,
-    todas as atualizações serão publicadas automaticamente nesta página.
+    Em caso de instabilidade, manutenção programada
+    ou indisponibilidade, todas as atualizações serão publicadas automaticamente nesta página.
 
-    💙 **Shop Host Brasil — Performance, estabilidade e confiança para o seu projeto.**
+    💙 **Shop Host Brasil — Hospedagem de alta performance para projetos que exigem estabilidade.**
 
   navbar:
     - title: 📊 Status
@@ -61,7 +63,7 @@ status-website:
     - title: 🌐 Site Oficial
       href: https://shophost.com.br
 
-    - title: 👤 Área de Clientes
+    - title: 👤 Área do Cliente
       href: https://clientes.shophost.com.br
 
     # - title: GitHub
@@ -77,7 +79,7 @@ i18n:
 
   activeIncidents: Incidentes Ativos
 
-  allSystemsOperational: "✅ Todos os sistemas da Shop Host Brasil estão operando normalmente"
+  allSystemsOperational: "✅ Todos os serviços estão operando normalmente"
 
   incidentsReported: Incidentes Reportados
 
@@ -137,7 +139,7 @@ i18n:
 
   # Rodapé
 
-  footer: "© 2026 Shop Host Brasil • Monitoramento em tempo real • Powered by Upptime"
+  footer: "© 2026 Shop Host Brasil • Infraestrutura monitorada em tempo real"
 
   # Textos de tempo em português
 
@@ -168,7 +170,7 @@ i18n:
   history:
     title: "📅 Histórico de Disponibilidade"
 
-    uptime: "Uptime"
+    uptime: "Disponibilidade"
 
     responseTime: "Tempo de Resposta"
 
@@ -183,7 +185,7 @@ i18n:
   # Gráficos
 
   graphs:
-    title: "📊 Monitoramento de Performance"
+    title: "📊 Performance da Infraestrutura"
 
     uptime: "Disponibilidade (%)"
 
@@ -224,6 +226,7 @@ i18n:
 
 notifications:
   - type: email
+
     method:
       - d-belli@shophost.com.br
 
