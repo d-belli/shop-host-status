@@ -26,7 +26,7 @@ status-website:
 
   # baseUrl: /your-repo-name
 
-  logoUrl: logoUrl: https://raw.githubusercontent.com/d-belli/shop-host-status/master/assets/logo.svg
+  logoUrl: https://raw.githubusercontent.com/d-belli/shop-host-status/master/assets/logo.svg
   name: Shop Host Brasil Status
 
   introTitle: "🚀 Monitoramento Oficial da Infraestrutura Shop Host Brasil"
