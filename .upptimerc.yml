@@ -3,15 +3,17 @@ owner: d-belli # Your GitHub organization or username, where this repository liv
 repo: shop-host-status # The name of this repository
 
 sites:
-  - name: Site Principal
+  - name: 🌐 Site Principal
     check: "tcp-ping"
     url: $IP_SITE
     port: 80
-  - name: Painel de Clientes
+
+  - name: 👤 Painel de Clientes
     check: "tcp-ping"
     url: $IP_SITE
     port: 80
-  - name: Node BR 01 - Servidor Dedicado
+
+  - name: 🇧🇷 Node BR 01 - Servidor Dedicado
     check: "tcp-ping"
     url: 181.215.45.203
     port: 4085
@@ -19,33 +21,52 @@ sites:
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
+
   cname: uptime.shophost.com.br
+
   # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Status Shop Host Brasil
-  introTitle: "**Shop Host Brasil** - Página Oficial de Status"
+
+  logoUrl: logoUrl: https://raw.githubusercontent.com/d-belli/shop-host-status/master/assets/logo.svg
+  name: Shop Host Brasil Status
+
+  introTitle: "🚀 Monitoramento Oficial da Infraestrutura Shop Host Brasil"
+
   introMessage: |
-    Bem-vindo à página de status oficial da **Shop Host Brasil**.
-    
-    Aqui você acompanha em **tempo real** a disponibilidade dos nossos serviços:
-    ✅ Site Principal
-    ✅ Painel de Clientes
-    
-    Nosso compromisso é garantir a melhor experiência para o seu negócio. 
-    Em caso de qualquer indisponibilidade, esta página será atualizada automaticamente.
-    
-    💚 **Shop Host Brasil - Hospedagem que seu negócio merece**
+    Bem-vindo à página oficial de monitoramento da **Shop Host Brasil**.
+
+    Aqui você acompanha em tempo real a disponibilidade,
+    estabilidade e performance da nossa infraestrutura.
+
+    ### Serviços monitorados:
+    ✅ Site Principal  
+    ✅ Área de Clientes  
+    ✅ Infraestrutura Dedicada  
+    ✅ Nodes e Serviços Internos  
+
+    Nossa equipe monitora continuamente todos os serviços
+    para garantir máxima estabilidade, segurança e performance.
+
+    Em caso de incidentes, manutenções ou instabilidades,
+    todas as atualizações serão publicadas automaticamente nesta página.
+
+    💙 **Shop Host Brasil — Performance, estabilidade e confiança para o seu projeto.**
+
   navbar:
-    - title: Status
+    - title: 📊 Status
       href: /
+
     # - title: Histórico
     #   href: /history
-    - title: Site Oficial
+
+    - title: 🌐 Site Oficial
       href: https://shophost.com.br
-    - title: Área de Clientes
+
+    - title: 👤 Área de Clientes
       href: https://clientes.shophost.com.br
+
     # - title: GitHub
     #   href: https://github.com/$OWNER/$REPO
+
   themeUrl: https://uptime.shophost.com.br/shop.css
 
 # Upptime also supports notifications, assigning issues, and more
@@ -53,105 +74,177 @@ status-website:
 
 i18n:
   # Traduções principais em português
+
   activeIncidents: Incidentes Ativos
-  allSystemsOperational: ✅ Todos os sistemas da Shop Host Brasil estão operacionais
+
+  allSystemsOperational: "✅ Todos os sistemas da Shop Host Brasil estão operando normalmente"
+
   incidentsReported: Incidentes Reportados
-  pastIncidents: Incidentes Anteriores
-  operational: 🟢 Operacional
-  degraded: 🟡 Desempenho Degradado
-  partialOutage: 🟠 Interrupção Parcial
-  majorOutage: 🔴 Interrupção Grave
-  underMaintenance: 🔧 Em Manutenção Programada
-  
-  # 🔥 TRADUÇÕES DE INCIDENTES (adicionadas)
-  resolved: ✅ Resolvido
-  investigating: 🔍 Investigando
-  identified: 🎯 Identificado
-  monitoring: 📊 Monitorando
-  update: 📢 Atualização
-  postmortem: 📝 Análise Pós-incidente
-  
+
+  pastIncidents: Histórico de Incidentes
+
+  operational: "🟢 Operacional"
+
+  degraded: "🟡 Instabilidade Parcial"
+
+  partialOutage: "🟠 Interrupção Parcial"
+
+  majorOutage: "🔴 Indisponibilidade"
+
+  underMaintenance: "🔧 Manutenção Programada"
+
+  # Traduções de incidentes
+
+  resolved: "✅ Resolvido"
+
+  investigating: "🔍 Investigando"
+
+  identified: "🎯 Problema Identificado"
+
+  monitoring: "📊 Monitorando"
+
+  update: "📢 Atualização"
+
+  postmortem: "📝 Relatório Pós-incidente"
+
   # Textos específicos da página de incidente
+
   incidentReport: "$NUMBERº Relatório de Incidente →"
-  activeIncidentSummary: "Aberto em $DATE, contém $POSTS posts"
-  incidentTitle: "Detalhes do $NUMBERº Incidente"
+
+  activeIncidentSummary: "Aberto em $DATE • $POSTS atualizações"
+
+  incidentTitle: "Detalhes do Incidente #$NUMBER"
+
   incidentDetails: "Detalhes do Incidente"
-  incidentFixed: "✅ Resolvido"
-  incidentOngoing: "🟡 Em andamento"
-  incidentOpenedAt: "Aberto em"
-  incidentClosedAt: "Fechado em"
+
+  incidentFixed: "✅ Incidente Resolvido"
+
+  incidentOngoing: "🟡 Incidente em andamento"
+
+  incidentOpenedAt: "Iniciado em"
+
+  incidentClosedAt: "Finalizado em"
+
   incidentSubscribe: "📧 Receber atualizações"
+
   incidentViewOnGitHub: "Ver no GitHub"
-  incidentCommentSummary: "$AUTHOR comentou em $DATE"
-  incidentBack: "← Voltar para lista de incidentes"
-  pastIncidentsResolved: "Resolvido em $MINUTES, contém $POSTS posts"
-  
-  # Textos do rodapé
-  footer: "© 2026 Shop Host Brasil - Todos os direitos reservados | Status Page alimentada com 💚 pelo Upptime"
-  
+
+  incidentCommentSummary: "$AUTHOR publicou uma atualização em $DATE"
+
+  incidentBack: "← Voltar para histórico"
+
+  pastIncidentsResolved: "Resolvido em $MINUTES • $POSTS atualizações"
+
+  # Rodapé
+
+  footer: "© 2026 Shop Host Brasil • Monitoramento em tempo real • Powered by Upptime"
+
   # Textos de tempo em português
+
   justNow: agora mesmo
+
   minuteAgo: há 1 minuto
+
   minutesAgo: há %{count} minutos
+
   hourAgo: há 1 hora
+
   hoursAgo: há %{count} horas
+
   dayAgo: há 1 dia
+
   daysAgo: há %{count} dias
+
   monthAgo: há 1 mês
+
   monthsAgo: há %{count} meses
+
   yearAgo: há 1 ano
+
   yearsAgo: há %{count} anos
-  
-  # Textos da página de histórico
+
+  # Página de histórico
+
   history:
-    title: "📅 Histórico de Uptime - Shop Host Brasil"
+    title: "📅 Histórico de Disponibilidade"
+
     uptime: "Uptime"
+
     responseTime: "Tempo de Resposta"
-    noData: "Sem dados disponíveis"
+
+    noData: "Nenhum dado disponível"
+
     show: "Exibir"
-    entries: "entradas"
-    noIncidents: "✅ Nenhum incidente reportado neste período"
-  
-  # Textos de gráficos
+
+    entries: "registros"
+
+    noIncidents: "✅ Nenhum incidente registrado neste período"
+
+  # Gráficos
+
   graphs:
-    title: "📊 Gráficos de Uptime"
-    uptime: "Uptime (%)"
+    title: "📊 Monitoramento de Performance"
+
+    uptime: "Disponibilidade (%)"
+
     responseTime: "Tempo de Resposta (ms)"
+
     noData: "Sem dados disponíveis para o período selecionado"
-  
+
   # Seletor de período
+
   period:
     daily: "Diário"
+
     weekly: "Semanal"
+
     monthly: "Mensal"
+
     yearly: "Anual"
-    all: "Todo período"
-  
-  # Textos de notificações
-  subscribe: "📧 Receba notificações por email"
-  email: "Seu email"
+
+    all: "Todo o período"
+
+  # Notificações
+
+  subscribe: "📧 Receber notificações"
+
+  email: "Seu melhor email"
+
   webhook: "Webhook URL"
+
   rss: "Feed RSS"
-  notify: "Notificar-me"
-  unsubscribe: "Cancelar inscrição"
-  manageSubscription: "Gerenciar inscrição"
+
+  notify: "Ativar notificações"
+
+  unsubscribe: "Cancelar notificações"
+
+  manageSubscription: "Gerenciar notificações"
 
 # Configurações de notificações (opcional)
+
 notifications:
   - type: email
-    method: 
+    method:
       - d-belli@shophost.com.br
-    message: "🚨 **Shop Host Brasil** - Alerta de Incidente: {{ incident.title }}"
+
+    message: "🚨 Shop Host Brasil - Novo incidente detectado: {{ incident.title }}"
 
 # Configurações de commit
+
 commitMessages:
-  readme: "docs: atualizar status da Shop Host Brasil [skip ci]"
-  site: "chore: atualizar status page [skip ci]"
+  readme: "docs: atualizar página de status Shop Host Brasil [skip ci]"
+
+  site: "status: atualizar monitoramento automático [skip ci]"
 
 # Agendamento dos workflows
+
 workflowSchedule:
-  graphs: "0 0 * * *"  # Executa gráficos diariamente
-  responseTime: "0 0 * * *"  # Executa tempo de resposta diariamente
-  staticSite: "0 0 * * *"  # Gera site diariamente
-  summary: "0 0 * * *"  # Sumário diário
-  uptime: "*/5 * * * *"  # Verifica uptime a cada 5 minutos
+  graphs: "0 0 * * *" # Executa gráficos diariamente
+
+  responseTime: "0 0 * * *" # Executa tempo de resposta diariamente
+
+  staticSite: "0 0 * * *" # Gera site diariamente
+
+  summary: "0 0 * * *" # Sumário diário
+
+  uptime: "*/5 * * * *" # Verifica uptime a cada 5 minutos
