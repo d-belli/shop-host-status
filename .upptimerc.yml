@@ -7,8 +7,10 @@ sites:
     url: https://shophost.com.br
   - name: Painel de Clientes
     url: https://clientes.shophost.com.br
-  - name: Servidor Dedicado 01 - BR
-    url: $URL_DEDICADO
+  - name: Node BR 01 - Servidor Dedicado
+    check: "tcp-ping"
+    url: 181.215.45.203
+    port: 53
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
