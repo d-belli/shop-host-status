@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1723,
-    "timeDay": 1723,
-    "timeWeek": 1723,
-    "timeMonth": 1723,
-    "timeYear": 1723,
+    "time": 1758,
+    "timeDay": 1758,
+    "timeWeek": 1758,
+    "timeMonth": 1758,
+    "timeYear": 1758,
     "dailyMinutesDown": {}
   },
   {
@@ -28,11 +28,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 2988,
-    "timeDay": 2988,
-    "timeWeek": 2988,
-    "timeMonth": 2988,
-    "timeYear": 2988,
+    "time": 3001,
+    "timeDay": 3001,
+    "timeWeek": 3001,
+    "timeMonth": 3001,
+    "timeYear": 3001,
     "dailyMinutesDown": {}
   },
   {
@@ -40,19 +40,19 @@
     "url": "181.215.45.203",
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "node-br-01-servidor-dedicado",
-    "status": "down",
-    "uptime": "76.66%",
-    "uptimeDay": "76.66%",
-    "uptimeWeek": "76.66%",
-    "uptimeMonth": "76.66%",
-    "uptimeYear": "76.66%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
+    "status": "up",
+    "uptime": "16.67%",
+    "uptimeDay": "16.67%",
+    "uptimeWeek": "16.67%",
+    "uptimeMonth": "16.67%",
+    "uptimeYear": "16.67%",
+    "time": 170,
+    "timeDay": 170,
+    "timeWeek": 170,
+    "timeMonth": 170,
+    "timeYear": 170,
     "dailyMinutesDown": {
-      "2026-05-19": 0
+      "2026-05-19": 3
     }
   }
 ]
