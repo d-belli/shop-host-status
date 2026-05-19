@@ -10,7 +10,7 @@ sites:
   - name: Node BR 01 - Servidor Dedicado
     check: "tcp-ping"
     url: 181.215.45.203
-    port: 53
+    port: 4085
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
